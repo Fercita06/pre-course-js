@@ -12,24 +12,29 @@ function isNumberPositive (number){
 console.log(isNumberPositive (-1));
 
 //2- write a function that takes a number of days and converts it into an age.
-/*let days =
-const numberToAge = ()=>{
+
+const numberToAge = (days)=>{
   let totalAge = days /365;
   return totalAge;
-}*/
+}
+console.log (numberToAge(9854));
 
 // 3- write a function that takes three numbers and returns the largest of the three numbers
 const getLargestNumber =  (number1, number2, number3) => {
   if (number1 >= number2 && number1 >= number3) {
     console.log ("number1 is the largest number");
+    return number1;
   }else if (number2 >= number1 && number2 >= number3) {
     console.log ("number is the largest number");
+    return number2;
   }else {
     console.log ("number3 is the largest number");
+    return number3;
   }
 
 }
 console.log (getLargestNumber (5,1,4));
+
 
 //4 -write a function that takes an array of names and returns the last name from the array of names.
 let students = ["Charlie", "Rob", "Andy", "stu"];
